@@ -10,6 +10,14 @@ end
 gem 'devise'
 
 gem 'tiddle'
+
+gem 'rack-cors', :require => 'rack/cors'
+
+gem 'stripe'
+
+gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+gem 'carrierwave-aws'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
@@ -42,6 +50,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
 end
 
 group :development do
